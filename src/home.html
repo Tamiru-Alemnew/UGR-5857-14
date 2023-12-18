@@ -8,99 +8,140 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
   </head>
   <body>
     <!-- home page for portfolio website -->
     <!-- nav bar -->
-    <header>
-      <div class="profile">
-        <div class="profile__name">
-          <img src="images/profile.jpg" alt="Tamiru Alemnew" />
-          <p>Tamiru Alemnew</p>
+  <header>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <div class="navbar-start">
+            <div class="navbar-item">
+              <figure class="image ">
+                  <img class="image is-48x48  is-rounded " src="images/profile.jpg" alt="Tamiru Alemnew">
+              </figure>
+              <p class="has-text-white is-size-5 ml-4">Tamiru Alemnew</p>
+            </div>
+          </div>
         </div>
-
-        <i class="fas fa-bars"></i>
+        <div class="navbar-burger burger" data-target="navbarFooter">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <nav>
-        <ul class="navbar-footer__navigation">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-    </header>
+
+      <div id="navbarFooter" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="home.html" class="navbar-item has-text-white">Home</a>
+          <a href="about.html" class="navbar-item has-text-white">About Me</a>
+          <a href="projects.html" class="navbar-item has-text-white">Projects</a>
+          <a href="contact.html" class="navbar-item has-text-white">Contact Me</a>
+          <a href="resume.html" class="navbar-item has-text-white">Resume</a>
+        </div>
+      </div>
+    </nav>
+  </header>
     <!-- main content -->
     <main>
-      <!-- hero section -->
-      <section class="hero">
-        <img
-          class="hero__image"
-          src="images/profile.jpg"
-          alt="Tamiru Alemnew"
-        />
-        <div class="hero__text">
-          <h2>Hi, I'm Tamiru Alemnew</h2>
-          <h4>I'm a full stack web developer</h4>
-          <p>
-            Welcome to my portfolio! Here you can learn more about my skills,
-            check out my resume, and see some of the projects I've worked on.
-            Feel free to reach out if you have any questions or opportunities to
-            discuss.
-          </p>
+      <section class="hero  mt-6">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-vcentered">
+              <div class="column">
+                <div class="content hero__text">
+                  <h2>Hi, I'm Tamiru Alemnew</h2>
+                  <h4>I'm a full stack web developer</h4>
+                  <p>
+                    Welcome to my portfolio! Here you can learn more about my skills,
+                    check out my resume, and see some of the projects I've worked on.
+                    Feel free to reach out if you have any questions or opportunities to
+                    discuss.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-one-third">
+                <figure class="image is-256x256">
+                  <img src="images/profile.jpg" alt="Tamiru Alemnew" class="hero__image">
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- skills section -->
-      <section id="techstack">
-        <h2>Skills</h2>
-        <div class="techstack__list">
-          <div class="techstack__item">
-            <img src="images/html.png" alt="HTML" />
-            <h3>HTML</h3>
+      <section id="techstack" class="section has-background-dark has-text-centered">
+        <h2 class="has-text-white title is-4">Skills</h2>
+        <div class="is-flex is-align-items-center overflow-x-auto" style="overflow-x: auto; overflow-y: hidden; width: 100%;">
+          <div class="card mx-2">
+            <div class="card-content has-text-centered">
+              <figure class="image is-128x128">
+                <img src="images/html.png" alt="HTML">
+              </figure>
+              <h3 class="has-text-black">HTML</h3>
+            </div>
           </div>
-          <div class="techstack__item">
-            <img src="images/css.png" alt="CSS" />
-            <h3>CSS</h3>
+          <div class="card mx-2">
+            <div class="card-content has-text-centered">
+              <figure class="image is-128x128">
+                <img src="images/javaScript.png" alt="JavaScript">
+              </figure>
+              <h3 class="has-text-black">JavaScript</h3>
+            </div>
           </div>
-          <div class="techstack__item">
-            <img src="images/javaScript.png" alt="JavaScript" />
-            <h3>JavaScript</h3>
+          <div class="card mx-2">
+            <div class="card-content has-text-centered">
+              <figure class="image is-128x128">
+                <img src="images/mongodb.png" alt="MongoDB">
+              </figure>
+              <h3 class="has-text-black">MongoDB</h3>
+            </div>
           </div>
-          <div class="techstack__item">
-            <img src="images/mongodb.png" alt="MongoDB" />
-            <h3>MongoDB</h3>
+          <div class="card mx-2">
+            <div class="card-content has-text-centered">
+              <figure class="image is-128x128">
+                <img src="images/express.png" alt="Express.js">
+              </figure>
+              <h3 class="has-text-black">Express.js</h3>
+            </div>
           </div>
-          <div class="techstack__item">
-            <img src="images/express.png" alt="Express.js" />
-            <h3>Express.js</h3>
+          <div class="card mx-2">
+            <div class="card-content has-text-centered">
+              <figure class="image is-128x128">
+                <img src="images/react.png" alt="React">
+              </figure>
+              <h3 class="has-text-black">React</h3>
+            </div>
           </div>
-          <div class="techstack__item">
-            <img src="images/react.png" alt="React" />
-            <h3>React</h3>
+          <div class="card mx-2">
+            <div class="card-content has-text-centered">
+              <figure class="image is-128x128">
+                <img src="images/node.png" alt="Node.js">
+              </figure>
+              <h3 class="has-text-black">Node.js</h3>
+            </div>
           </div>
-          <div class="techstack__item">
-            <img src="images/node.png" alt="Node.js" />
-            <h3>Node.js</h3>
-          </div>
-          <div class="techstack__item">
-            <img src="images/java.png" alt="Java" />
-            <h3>Java</h3>
-          </div>
-          <div class="techstack__item">
-            <img src="images/python.jpg" alt="Python" />
-            <h3>Python</h3>
+          <div class="card mx-2">
+            <div class="card-content has-text-centered">
+              <figure class="image is-128x128">
+                <img src="images/python.jpg" alt="Python">
+              </figure>
+              <h3 class="has-text-black">Python</h3>
+            </div>
           </div>
         </div>
       </section>
-      <div class="soft-skills">
-        <h4>Soft Skills</h4>
-        <div class="soft-skills__list">
-          <div class="soft-skills__group1">
-            <div class="skill-set">
-              <h5>Communication</h5>
+
+      <div class="section">
+        <h4 class="title is-4">Soft Skills</h4>
+        <div class=" is-multiline is-flex">
+          <div class="column is-half-mobile is-one-third-tablet">
+            <div class="box">
+              <h5 class="subtitle is-5">Communication</h5>
               <ul>
                 <li>Verbal Communication</li>
                 <li>Written Communication</li>
@@ -108,15 +149,21 @@
                 <li>Listening Skills</li>
               </ul>
             </div>
-            <div class="skill-set">
-              <h5>Teamwork</h5>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <div class="box">
+              <h5 class="subtitle is-5">Teamwork</h5>
               <ul>
                 <li>Collaboration</li>
                 <li>Conflict Resolution</li>
+                <li>Dependability</li>
+                <li>Reliability</li>
               </ul>
             </div>
-            <div class="skill-set hidden">
-              <h5>Adaptability</h5>
+          </div>
+          <div class="column is-hidden-mobile is-one-third-tablet">
+            <div class="box is-hidden-mobile">
+              <h5 class="subtitle is-5">Adaptability</h5>
               <ul>
                 <li>Flexibility</li>
                 <li>Open-Mindedness</li>
@@ -125,18 +172,22 @@
               </ul>
             </div>
           </div>
-          <div class="soft-skills__group2">
-            <div class="skill-set">
-              <h5>Problem Solving</h5>
+          </div>
+          <div class=" is-multiline is-flex">
+          <div class="column is-half-mobile is-one-third-tablet">
+            <div class="box">
+              <h5 class="subtitle is-5">Problem Solving</h5>
               <ul>
                 <li>Critical Thinking</li>
                 <li>Decision Making</li>
                 <li>Creativity</li>
+                <li>Resourcefulness</li>
               </ul>
             </div>
-
-            <div class="skill-set">
-              <h5>Work Ethic</h5>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <div class="box">
+              <h5 class="subtitle is-5">Work Ethic</h5>
               <ul>
                 <li>Responsibility</li>
                 <li>Time Management</li>
@@ -144,8 +195,10 @@
                 <li>Self-Motivation</li>
               </ul>
             </div>
-            <div class="skill-set hidden">
-              <h5>Time Management</h5>
+          </div>
+          <div class="column is-hidden-mobile is-one-third-tablet">
+            <div class="box is-hidden-mobile">
+              <h5 class="subtitle is-5">Time Management</h5>
               <ul>
                 <li>Task Prioritization</li>
                 <li>Scheduling</li>
@@ -154,15 +207,20 @@
               </ul>
             </div>
           </div>
+          </div>
         </div>
       </div>
+
       <!-- project  -->
-      <section class="projects">
-        <h2>Projects</h2>
-        <div class="projects__list">
-          <div class="projects__item column">
-            <img src="images/project1.jpg" alt="project 1" />
-            <h3>Official 4k labs website</h3>
+    <section class="section projects">
+      <h2 class="title is-2 has-text-centered">Projects</h2>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="box">
+            <figure class="image is-4by3">
+              <img src="images/project1.jpg" alt="project 1">
+            </figure>
+            <h3 class="title is-4">Official 4k labs website</h3>
             <p>
               I built a website for 4K Labs, located within the 4 Kilo campus of
               Addis Ababa University. The website provides information about the
@@ -170,9 +228,13 @@
               technologies and follows best practices for accessibility and SEO.
             </p>
           </div>
-          <div class="projects__item column">
-            <img src="images/apple.jpg" alt="project 2" />
-            <h3>Official Apple website clone</h3>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <figure class="image is-4by3">
+              <img src="images/apple.jpg" alt="project 2">
+            </figure>
+            <h3 class="title is-4">Official Apple website clone</h3>
             <p>
               As part of my web development learning journey, I cloned the
               official Apple website. This project helped me understand and
@@ -181,9 +243,13 @@
               attention to detail and the use of modern web technologies.
             </p>
           </div>
-          <div class="projects__item column">
-            <img src="images/amazon.jpg" alt="project 3" />
-            <h3>Official Amazon Website clone</h3>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <figure class="image is-4by3">
+              <img src="images/amazon.jpg" alt="project 3">
+            </figure>
+            <h3 class="title is-4">Official Amazon Website clone</h3>
             <p>
               Another significant project I undertook was cloning the official
               Amazon website. This project allowed me to delve deeper into
@@ -194,158 +260,168 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="resume">
-        <h2>Resume</h2>
-        <div class="resume__content resume__content-home">
-          
-          <div class="resume__text row">
-            <div class="resume__text-item">
-              <h3>Education</h3>
-              <h4>Bachelor of Science in Software Engineering</h4>
-              <h5>Addis Ababa University</h5>
-              <p>2021 - 2026</p>
-              <p>
-                During my time at Addis Ababa University, I gained a solid
-                foundation in computer science principles. I took courses in
-                data structures, algorithms, software engineering, and web
-                development. I also completed several projects, which gave me
-                practical experience in applying the concepts I learned in
-                class.
-              </p>
-            </div>
-            <div class="resume__text-item">
-              <h4>Full Stack Web Development</h4>
-              <p>FreeCodeCamp</p>
-              <p>2023 - 2023</p>
-              <p>
-                Through this comprehensive course, I honed my skills in HTML,
-                CSS, JavaScript, and responsive web design. I also learned
-                back-end development using Node.js and Express.js, and data
-                storage with MongoDB. The course included building several
-                projects, which helped me apply the concepts I learned and gain
-                practical experience in full stack web development.
-              </p>
-            </div>
-            <div class="resume__text-item">
-              <h4>Software Engineering Intern</h4>
-              <h5>Africa to Silicon Valley (A2SV)</h5>
-              <p>2022 - Present</p>
-              <p>
-                As a Software Engineering Student at A2SV, I've had the
-                opportunity to work on real-world projects and collaborate with
-                a team of talented engineers. I've been involved in various
-                stages of the software development lifecycle, from requirement
-                analysis and design to coding and testing. This experience has
-                given me a deeper understanding of software engineering
-                principles and best practices. I've also improved my
-                problem-solving skills and learned to work effectively in a
-                team.
-              </p>
-            </div>
+      </div>
+    </section>
+  <!-- resume -->
+  <section class="section has-background-light">
+    <h2 class="title is-2 has-text-centered">Resume</h2>
+    <div class="is-flex  overflow-x-auto" style="overflow-x: auto; width: 100%;">
 
-            <div class="resume__text-item">
-              <h3>Experience</h3>
-              <h4>Software Engineer</h4>
-              <p>Arez Armada</p>
-              <p>2023 - 2023</p>
-              <p>3 months</p>
-              <p>
-                As a Software Engineer at Arez Armada, I'm responsible for
-                designing, coding, and modifying software, from layout to
-                function and according to specifications. I strive to create
-                visually appealing sites that feature user-friendly design and
-                clear footer__navigation. I work closely with our UX designers
-                and other developers to ensure a great user experience and
-                efficient application logic.
-              </p>
-            </div>
-            <div class="resume__text-item">
-              <h4>Back-End Developer</h4>
-              <h5>4K Labs</h5>
-              <p>2023 - Present</p>
-              <p>
-                As a Back-End Developer at 4K Labs, I've been responsible for
-                server-side web application logic and integration of the work
-                front-end developers do. I've developed and maintained the
-                server-side network, ensured high performance and
-                responsiveness, and integrated user-facing elements with
-                server-side logic. This role has allowed me to deepen my
-                understanding of back-end technologies and improve my
-                problem-solving skills.
-              </p>
+      <div class="card mr-4" style="min-width: 300px;">
+        <div class="card-content">
+          <h3 class="title is-4">Education</h3>
+          <h4>Bachelor of Science in Software Engineering</h4>
+          <h5>Addis Ababa University</h5>
+          <p>2021 - 2026</p>
+          <p>
+            During my time at Addis Ababa University, I gained a solid
+            foundation in computer science principles. I took courses in
+            data structures, algorithms, software engineering, and web
+            development. I also completed several projects, which gave me
+            practical experience in applying the concepts I learned in
+            class.
+          </p>
+        </div>
+      </div>
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div class="card-content">
+          <h4>Full Stack Web Development</h4>
+          <p>FreeCodeCamp</p>
+          <p>2023 - 2023</p>
+          <p>
+            Through this comprehensive course, I honed my skills in HTML,
+            CSS, JavaScript, and responsive web design. I also learned
+            back-end development using Node.js and Express.js, and data
+            storage with MongoDB. The course included building several
+            projects, which helped me apply the concepts I learned and gain
+            practical experience in full stack web development.
+          </p>
+        </div>
+      </div>
+
+      <div class="card mr-4" style="min-width: 300px;" >
+        <div class="card-content">
+          <h4>Software Engineering Intern</h4>
+          <h5>Africa to Silicon Valley (A2SV)</h5>
+          <p>2022 - Present</p>
+          <p>
+            As a Software Engineering Student at A2SV, I've had the
+            opportunity to work on real-world projects and collaborate with
+            a team of talented engineers. I've been involved in various
+            stages of the software development lifecycle, from requirement
+            analysis and design to coding and testing. This experience has
+            given me a deeper understanding of software engineering
+            principles and best practices. I've also improved my
+            problem-solving skills and learned to work effectively in a
+            team.
+          </p>
+        </div>
+      </div>
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div class="card-content">
+          <h3 class="title is-4">Experience</h3>
+          <h4>Software Engineer</h4>
+          <p>Arez Armada</p>
+          <p>2023 - 2023</p>
+          <p>3 months</p>
+          <p>
+            As a Software Engineer at Arez Armada, I'm responsible for
+            designing, coding, and modifying software, from layout to
+            function and according to specifications. I strive to create
+            visually appealing sites that feature user-friendly design and
+            clear navigation. I work closely with our UX designers
+            and other developers to ensure a great user experience and
+            efficient application logic.
+          </p>
+        </div>
+      </div>
+
+      <div class="card " style="min-width: 300px;">
+        <div class="card-content">
+          <h4>Back-End Developer</h4>
+          <h5>4K Labs</h5>
+          <p>2023 - Present</p>
+          <p>
+            As a Back-End Developer at 4K Labs, I've been responsible for
+            server-side web application logic and integration of the work
+            front-end developers do. I've developed and maintained the
+            server-side network, ensured high performance and
+            responsiveness, and integrated user-facing elements with
+            server-side logic. This role has allowed me to deepen my
+            understanding of back-end technologies and improve my
+            problem-solving skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </main>
+
+  <!-- Footer -->
+  <footer class="footer has-background-dark has-text-white">
+    <nav class="columns">
+      <div class="is-flex">
+        <div class="column">
+          <div>
+            <span class="is-size-4">About Me</span>
+            <p class="has-text-white">
+              I'm a software developer skilled in multiple languages and
+              frameworks. I enjoy problem-solving and continuously strive to
+              improve my skills.
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="has-text-centered">
+            <div>
+              <ul>
+                <li><span class="is-size-4">Portfolio</span></li>
+                <li><a class="has-text-white" href="home.html">Home</a></li>
+                <li><a class="has-text-white" href="about.html">About Me</a></li>
+                <li><a class="has-text-white" href="projects.html">Projects</a></li>
+                <li><a class="has-text-white" href="contact.html">Contact Me</a></li>
+                <li><a class="has-text-white" href="resume.html">Resume</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <div class="footer__about-me">
-          <span class="footer__nav-title">About Me</span>
-          <p>
-            I'm a software developer skilled in multiple languages and
-            frameworks. I enjoy problem-solving and continuously strive to
-            improve my skills.
-          </p>
-        </div>
-        <ul class="footer__nav">
-          <li><span class="footer__nav-title">Portfolio</span></li>
-          <li><a class="footer__quick-links" href="home.html">Home</a></li>
-          <li><a class="footer__quick-links" href="about.html">About Me</a></li>
-          <li>
-            <a class="footer__quick-links" href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="footer__quick-links" href="contact.html">Contact Me</a>
-          </li>
-          <li><a class="footer__quick-links" href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-
-      <address class="footer__address">
-        <span class="footer__nav-title"> Contact</span>
-        <span>Gerji, Addis Ababa Ethiopia</span>
-        <span
-          ><i class="fas fa-phone"></i>
-          <a class="phone" href="tel:+251943045904">+251943045904</a></span
-        >
-        <span> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
-      </address>
-      <div class="footer__dot"><i class="fas fa-ellipsis-h"></i></div>
-      <div class="footer__social-media">
-        <ul class="footer__social-media-list">
-          <li class="footer__icon">
-            <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a
-              href="https://www.linkedin.com/in/Tamiru-Alemnew/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-        </ul>
       </div>
-      <p class="footer__copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
-    </footer>
+      <div class="is-flex">
+        <div class="column">
+            <div class="has-text-centered">
+              <div>
+                <address>
+                  <span class="is-size-4">Contact</span>
+                  <br>
+                  <span>Gerji, Addis Ababa Ethiopia</span>
+                  <br>
+                  <span><i class="fas fa-phone"></i><a class="has-text-white" href="tel:+251943045904">+251943045904</a></span>
+                  <br>
+                  <span><i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
+                </address>
+              </div>
+              </div>
+        </div>
+        <div class="column">
+          <div class="has-text-centered">
+            <div>
+              <ul class="columns  is-multiline is-centered">
+                <li class="column "><a class="has-text-white" href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://www.instagram.com/tamiru_alemnew/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://www.linkedin.com/in/Tamiru-Alemnew/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://github.com/Tamiru-Alemnew" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <p class="has-text-centered">Copywrite &copy; 2023 Tamiru Alemnew</p>
+  </footer>
   </body>
 </html>

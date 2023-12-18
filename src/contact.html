@@ -7,48 +7,65 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  
     <title>Contact me</title>
   </head>
   <body>
-    <header>
-      <div class="profile">
-        <div class="profile__name">
-          <img src="images/profile.jpg" alt="Tamiru Alemnew" />
-          <p>Tamiru Alemnew</p>
+  <header>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <div class="navbar-start">
+            <div class="navbar-item">
+              <figure class="image ">
+                  <img class="image is-48x48  is-rounded " src="images/profile.jpg" alt="Tamiru Alemnew">
+              </figure>
+              <p class="has-text-white is-size-5 ml-4">Tamiru Alemnew</p>
+            </div>
+          </div>
         </div>
-
-        <i class="fas fa-bars"></i>
+        <div class="navbar-burger burger" data-target="navbarFooter">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <nav>
-        <ul class="navbar-footer__navigation">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-    </header>
+
+      <div id="navbarFooter" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="home.html" class="navbar-item has-text-white">Home</a>
+          <a href="about.html" class="navbar-item has-text-white">About Me</a>
+          <a href="projects.html" class="navbar-item has-text-white">Projects</a>
+          <a href="contact.html" class="navbar-item has-text-white">Contact Me</a>
+          <a href="resume.html" class="navbar-item has-text-white">Resume</a>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
-      <section class="contact-me">
-        <h2>Contact Me</h2>
-        <div class="reasons">
-          <div class="reason">
-            <h4>Professional</h4>
+   <section class="section mt-6">
+    <h2 class="title is-2 has-text-centered">Contact Me</h2>
+
+    <div class="">
+      <div class="">
+        <div class="reasons columns">
+          <div class="box">
+            <h4 class="title is-4">Professional</h4>
             <p>
               If you're looking for a dedicated software developer for your
               project or if you want to discuss potential collaborations or job
               opportunities.
             </p>
           </div>
-          <p>
+          <p class="content m-6">
             Whether it's for professional collaboration or personal discussion,
             I'm always open to connect and engage. Don't hesitate to reach out!
           </p>
-          <div class="reason">
-            <h4>Personal</h4>
+          <div class="box">
+            <h4 class="title is-4">Personal</h4>
             <p>
               If you share a similar interest in programming languages,
               frameworks, or any tech-related topics and want to exchange ideas
@@ -56,149 +73,136 @@
             </p>
           </div>
         </div>
-        <div class="contact">
-          <address>
-            <span class="footer__nav-title"> Contact</span>
-            <span>Gerji, Addis Ababa Ethiopia</span>
-            <span
-              ><i class="fas fa-phone"></i>
-              <a class="phone" href="tel:+251943045904">+251943045904</a></span
-            >
-            <span
-              ><i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span
-            >
+      </div>
 
-            <div class="footer__social-media">
-              <ul class="footer__social-media-list">
-                <li class="footer__icon">
-                  <a
-                    href="https://www.facebook.com/tamiru.alemnew.5"
-                    target="_blank"
-                    ><i class="fab fa-facebook"></i
-                  ></a>
-                </li>
-                <li class="footer__icon">
-                  <a
-                    href="https://www.instagram.com/tamiru_alemnew/"
-                    target="_blank"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-                <li class="footer__icon">
-                  <a
-                    href="https://www.linkedin.com/in/Tamiru-Alemnew/"
-                    target="_blank"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li class="footer__icon">
-                  <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-                <li class="footer__icon">
-                  <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-              </ul>
+      <div class="">
+        <div class="columns is-mobile is-centered">
+          <div class="column ">
+            <div class="columns is-flex-direction-row-reverse is-align-items-center">
+              <address class="column m-6">
+                <span class="has-text-weight-bold title">Contact</span>
+                <br>
+                <span  class="mt-6">Gerji, Addis Ababa Ethiopia</span>
+                <br>
+                <span><i class="fas fa-phone"></i><a class="phone" href="tel:+251943045904">+251943045904</a></span>
+                <br>
+                <span><i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
+
+                <div class="">
+                  <ul class="is-flex">
+                    <li class="m-3 is-white">
+                      <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="m-3 is-white">
+                      <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="m-3 is-white">
+                      <a href="https://www.linkedin.com/in/Tamiru-Alemnew/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="m-3 is-white">
+                      <a href="https://github.com/Tamiru-Alemnew" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="m-3 is-white">
+                      <a href="https://github.com/Tamiru-Alemnew" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </address>
+
+              <form class="column m-6" action="#" method="post">
+                <div class="field">
+                  <label for="name" class="label">Name</label>
+                  <div class="control">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="input" />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="email" class="label">Email</label>
+                  <div class="control">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="input" />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="message" class="label">Message</label>
+                  <div class="control">
+                    <textarea name="message" id="message" cols="10" rows="5" placeholder="Enter your message" class="textarea"></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-black">Send Message</button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </address>
-          <form class="contact-me-form" action="#" method="post">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name"
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
-            />
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Enter your message"
-            ></textarea>
-            <input class="submit" type="submit" value="Send Message" />
-          </form>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
     </main>
 
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <div class="footer__about-me">
-          <span class="footer__nav-title">About Me</span>
-          <p>
-            I'm a software developer skilled in multiple languages and
-            frameworks. I enjoy problem-solving and continuously strive to
-            improve my skills.
-          </p>
+  <footer class="footer has-background-dark has-text-white">
+    <nav class="columns">
+      <div class="is-flex">
+        <div class="column">
+          <div>
+            <span class="is-size-4">About Me</span>
+            <p class="has-text-white">
+              I'm a software developer skilled in multiple languages and
+              frameworks. I enjoy problem-solving and continuously strive to
+              improve my skills.
+            </p>
+          </div>
         </div>
-        <ul class="footer__nav">
-          <li><span class="footer__nav-title">Portfolio</span></li>
-          <li><a class="footer__quick-links" href="home.html">Home</a></li>
-          <li><a class="footer__quick-links" href="about.html">About Me</a></li>
-          <li>
-            <a class="footer__quick-links" href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="footer__quick-links" href="contact.html">Contact Me</a>
-          </li>
-          <li><a class="footer__quick-links" href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
 
-      <address class="footer__address">
-        <span class="footer__nav-title"> Contact</span>
-        <span>Gerji, Addis Ababa Ethiopia</span>
-        <span
-          ><i class="fas fa-phone"></i>
-          <a class="phone" href="tel:+251943045904">+251943045904</a></span
-        >
-        <span> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
-      </address>
-      <div class="footer__dot"><i class="fas fa-ellipsis-h"></i></div>
-      <div class="footer__social-media">
-        <ul class="footer__social-media-list">
-          <li class="footer__icon">
-            <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a
-              href="https://www.linkedin.com/in/Tamiru-Alemnew/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-        </ul>
+        <div class="column">
+          <div class="has-text-centered">
+            <div>
+              <ul>
+                <li><span class="is-size-4">Portfolio</span></li>
+                <li><a class="has-text-white" href="home.html">Home</a></li>
+                <li><a class="has-text-white" href="about.html">About Me</a></li>
+                <li><a class="has-text-white" href="projects.html">Projects</a></li>
+                <li><a class="has-text-white" href="contact.html">Contact Me</a></li>
+                <li><a class="has-text-white" href="resume.html">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="footer__copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
-    </footer>
+      <div class="is-flex">
+        <div class="column">
+            <div class="has-text-centered">
+              <div>
+                <address>
+                  <span class="is-size-4">Contact</span>
+                  <br>
+                  <span>Gerji, Addis Ababa Ethiopia</span>
+                  <br>
+                  <span><i class="fas fa-phone"></i><a class="has-text-white" href="tel:+251943045904">+251943045904</a></span>
+                  <br>
+                  <span><i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
+                </address>
+              </div>
+              </div>
+        </div>
+        <div class="column">
+          <div class="has-text-centered">
+            <div>
+              <ul class="columns  is-multiline is-centered">
+                <li class="column "><a class="has-text-white" href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://www.instagram.com/tamiru_alemnew/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://www.linkedin.com/in/Tamiru-Alemnew/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://github.com/Tamiru-Alemnew" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li class="column "><a class="has-text-white" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <p class="has-text-centered">Copywrite &copy; 2023 Tamiru Alemnew</p>
+  </footer>
   </body>
 </html>
